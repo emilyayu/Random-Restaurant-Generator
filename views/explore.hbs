@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<title>Explore</title>
+</head>
+
+<h1>Restaurants in the Area</h1>
+  
+<body>
+
+<div id="overview_restaruants" style="display: block">
+    {{!-- <h2>Overview Books</h2> --}}
+  <table id = "restaurant-table">
+    <tr>
+        <th>Restaurant Name</th>
+        <th>Price Point</th>
+        <th>Cuisine</th>
+        <th>Star Rating</th>
+        <th>Neighborhoods</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Website</th>
+    </tr>
+    {{#each data}}
+    <tr>
+        <td>{{this.Title}}</td>
+        <td>{{this.Price_Range}}</td>
+        <td>{{this.Cuisine}}</td>
+        <td>{{this.Star_Rating}}</td>
+        <td>{{this.Neighborhoods}}</td>
+        <td>{{this.Phone}}</td>
+        <td>{{this.Address}}</td>
+        <td>{{this.Website}}</td>
+    </tr>
+    {{/each}}
+  </table>

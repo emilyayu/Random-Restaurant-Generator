@@ -1,0 +1,41 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<title>Selected Restaurant</title>
+</head>
+
+<h1>Randomly Selected Restaurant</h1>
+<h2>This is Where You Are Eating Tonight</h2>
+
+  
+<body>
+
+<div id="overview_restaruants" style="display: block">
+<form id="result-restaurant-html" method='GET' action='/generator'>>
+
+  <table id = "restaurant-table">
+    <tr>
+        <th>Restaurant Name</th>
+        <th>Price Point</th>
+        <th>Cuisine</th>
+        <th>Star Rating</th>
+        <th>Neighborhoods</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Website</th>
+    </tr>
+    <tr>
+        <td>{{selected.Title}}</td>
+        <td>{{selected.Price_Range}}</td>
+        <td>{{selected.Cuisine}}</td>
+        <td>{{selected.Star_Rating}}</td>
+        <td>{{selected.Neighborhoods}}</td>
+        <td>{{selected.Phone}}</td>
+        <td>{{selected.Address}}</td>
+        <td>{{selected.Website}}</td>
+    </tr>
+  </table>
+  <button type="submit">Back</button>
+  </form>

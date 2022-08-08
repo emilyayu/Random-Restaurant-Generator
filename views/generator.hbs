@@ -1,0 +1,42 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<title>Find me a restaurant to eat at in Los Angeles</title>
+</head>
+<h1>Find me a restaurant to eat at in Los Angeles!</h1>
+
+    <div id="pricing" style="display: block">
+    <fieldset class="fields">
+    <form id="search-restaurant-html" method='GET' action='/generator'>>
+    <h2>Price Preference per Entree</h2>
+    <p>How much do you want to spend today?</p>
+    <select name="price_preference">
+        <option value="0" >No Preference</option>
+        <option value="$">$ : $0-$10</option>
+        <option value="$$">$$ : $10-$30</option>
+        <option value="$$$">$$$ : $30-$50</option>
+        <option value="$$$$+">$$$$+: $50+</option>
+        </select>
+    <h2>Cuisine Preference</h2>
+    <p>What type of food would you like?</p>
+    <select name="cuisine_preference">
+        <option value="0" >No Preference</option>
+        <option value="American">American</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Japanese">Japanese</option>
+    </select>
+
+    <button type="submit">Search</button>
+    {{!-- <a href='/generator'><button>Reset</button></a> --}}
+    </form>
+
+
+
+
+
+    </fieldset>
+
+    <p>&nbsp;</p>
+    </div> 
